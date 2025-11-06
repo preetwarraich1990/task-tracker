@@ -24,7 +24,7 @@ export const TaskList = () => {
         setTasks([]);
     }
 
-    useEffect(() => {
+    useEffect(() => { //useLayoutEffect 
         const stored = localStorage.getItem(STORAGE_KEY);
         if (stored) {
             try {
